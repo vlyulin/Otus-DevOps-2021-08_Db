@@ -3,7 +3,8 @@
   hosts: localhost
   connection: local
   gather_facts: false
-  no_log: "{{ not lookup('env', 'MOLECULE_DEBUG') | bool }}"
+  no_log: false
+  # "{{ not lookup('env', 'MOLECULE_DEBUG') | bool }}"
   vars:
     ssh_port: 22
     ssh_user: "{{ lookup('env', 'USER') }}"
