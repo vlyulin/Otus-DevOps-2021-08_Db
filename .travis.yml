@@ -22,6 +22,5 @@ before_install:
 - tar xvf secrets.tar
 - mv google_compute_engine /home/travis/.ssh/
 - chmod 0600 /home/travis/.ssh/google_compute_engine
-- ssh-add /home/travis/.ssh/google_compute_engine
 notifications:
   slack: devops-team-otus:OQW5TMOgNIemU6RvI9YkzKYc
